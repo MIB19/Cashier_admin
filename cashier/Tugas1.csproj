@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67B59F05-427C-40C9-9819-34E6F831C00F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tugas1</RootNamespace>
+    <AssemblyName>Tugas1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\ipan\Downloads\Lang\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admindef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindef.Designer.cs">
+      <DependentUpon>admindef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminkasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminkasir.Designer.cs">
+      <DependentUpon>adminkasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminkelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminkelas.Designer.cs">
+      <DependentUpon>adminkelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminmanajer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminmanajer.Designer.cs">
+      <DependentUpon>adminmanajer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminpengajar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpengajar.Designer.cs">
+      <DependentUpon>adminpengajar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminsiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminsiswa.Designer.cs">
+      <DependentUpon>adminsiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir.Designer.cs">
+      <DependentUpon>Kasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasiratk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasiratk.Designer.cs">
+      <DependentUpon>kasiratk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasirkelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasirkelas.Designer.cs">
+      <DependentUpon>kasirkelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasirsnack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasirsnack.Designer.cs">
+      <DependentUpon>kasirsnack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manajerdetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manajerdetail.Designer.cs">
+      <DependentUpon>manajerdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manajer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manajer.Designer.cs">
+      <DependentUpon>manajer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manajerkelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manajerkelas.Designer.cs">
+      <DependentUpon>manajerkelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manajersnack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manajersnack.Designer.cs">
+      <DependentUpon>manajersnack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pemAtk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pemAtk.Designer.cs">
+      <DependentUpon>pemAtk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PemKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PemKelas.Designer.cs">
+      <DependentUpon>PemKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pemSnack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pemSnack.Designer.cs">
+      <DependentUpon>pemSnack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tugas1dbDataSet.cs">
+      <DependentUpon>tugas1dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugas1dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugas1dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admindef.resx">
+      <DependentUpon>admindef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminkasir.resx">
+      <DependentUpon>adminkasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminkelas.resx">
+      <DependentUpon>adminkelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminmanajer.resx">
+      <DependentUpon>adminmanajer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminpengajar.resx">
+      <DependentUpon>adminpengajar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminsiswa.resx">
+      <DependentUpon>adminsiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir.resx">
+      <DependentUpon>Kasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasiratk.resx">
+      <DependentUpon>kasiratk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasirkelas.resx">
+      <DependentUpon>kasirkelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasirsnack.resx">
+      <DependentUpon>kasirsnack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manajerdetail.resx">
+      <DependentUpon>manajerdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manajer.resx">
+      <DependentUpon>manajer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manajerkelas.resx">
+      <DependentUpon>manajerkelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manajersnack.resx">
+      <DependentUpon>manajersnack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pemAtk.resx">
+      <DependentUpon>pemAtk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemKelas.resx">
+      <DependentUpon>PemKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pemSnack.resx">
+      <DependentUpon>pemSnack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tugas1dbDataSet.xsc">
+      <DependentUpon>tugas1dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tugas1dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugas1dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugas1dbDataSet.xss">
+      <DependentUpon>tugas1dbDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
